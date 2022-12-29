@@ -1,6 +1,6 @@
 #+title: Contributing to nixpkgs
 #+description: Just a few personal notes on how to contribute to the NixOS/nixpkgs repository
-#+author: Matthias Benaets
+#+author: zied Akremi
 
 * Initial setup
 ** Forking

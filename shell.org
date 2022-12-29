@@ -1,6 +1,6 @@
 #+title: Nix-shell
 #+description: A beginner guide to using nix-shell
-#+author: Matthias Benaets
+#+author: zied Akremi
 
 * Terminal
 ** Shell
@@ -79,7 +79,7 @@ pkgs.appimageTools.wrapType2 {
     url = "https://website.com/link/to/appimage-${version}-and-or-${buildnumber}.AppImage";
     sha256 = "0000000000000000000000000000000000000000000000000000";
   };
-  # src = /home/matthias/app.AppImage
+  # src = /home/zied/app.AppImage
 }
 #+end_src
 - If you want to run the shell it is recommended to use ~$ nix build -f shell.nix~.

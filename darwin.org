@@ -1,6 +1,6 @@
 #+title: Nix-Darwin Fresh Install guide
 #+description: A basic introductional guide on building a Nix-Darwin config on your personal Mac machine
-#+author: Matthias Benaets
+#+author: zied Akremi
 
 #+attr_org: :width 300
 #+attr_html: :width 300

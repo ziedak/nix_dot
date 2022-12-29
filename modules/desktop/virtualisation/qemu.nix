@@ -105,7 +105,7 @@
 # 3.8. In file manager add connection
 # 3.8.1. For example in PCManFM
 # 3.8.2. Search for smb://*ip*/
-# 3.8.3. You can even specify specific folder smb://*ip*/users/Matthias/Desktop/share
+# 3.8.3. You can even specify specific folder smb://*ip*/users/zied/Desktop/share
 # 3.8.4. If prompted to log in, do it, otherwise it might close on its own.
 # 3.9. If there are any issues, maybe disable firewall on guest
 # 3.10. Recommended to bookmark location for later

@@ -20,7 +20,7 @@
     })
   ];
 
-  home-manager.users.matthias = {                           # Home-manager waybar config
+  home-manager.users.zied = {                           # Home-manager waybar config
     programs.waybar = {
       enable = true;
       systemd ={

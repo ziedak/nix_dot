@@ -1,6 +1,6 @@
 #+title: Nix Fresh Install guide
 #+description: A basic introductional guide on building a Nix config on your personal Linux machine
-#+author: Matthias Benaets
+#+author: zied Akremi
 
 #+attr_html: :width 280
 #+attr_org: :width 280

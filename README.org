@@ -1,6 +1,6 @@
-#+title: Matthias' NixOS & Nix-Darwin System Configuration Flake
+#+title: zied' NixOS & Nix-Darwin System Configuration Flake
 #+description: General information about my flake and how to set it up
-#+author: Matthias Benaets
+#+author: zied Akremi
 
 #+attr_org: :width 600
 [[file:rsc/Header.svg]]
@@ -133,7 +133,7 @@ This will depend on the host chosen.
   # swapon /dev/sda2
   # nixos-generate-config --root /mnt
   # nix-env -iA nixos.git
-  # git clone https://github.com/matthiasbenaets/nixos-config /mnt/etc/nixos/<name>
+  # git clone https://github.com/ziedAkremi/nixos-config /mnt/etc/nixos/<name>
 
   Optional if you are not me
   # cp /mnt/etc/nixos/hardware-configuration.nix /mnt/etc/nixos/nixos-config/hosts/<host>/.
@@ -186,7 +186,7 @@ This will depend on the host chosen.
      - ~$ sudo nixos-rebuild switch --flake <config path>#<host>~
 6. Rebuilds:
    - ~$ sudo nixos-rebuild switch --flake <config path>#<host>~
-   - For example ~$ sudo nixos-rebuild switch --flake ~/.setup#matthias~
+   - For example ~$ sudo nixos-rebuild switch --flake ~/.setup#zied~
 
 * Nix Installation Guide
 This flake currently has *1* host
@@ -207,7 +207,7 @@ So this is how it is set up in this flake.
 
 #+begin_src
   $ nix-env -iA nixpkgs.git
-  $ git clone https://github.com/matthiasbenaets/nixos-config ~/.setup
+  $ git clone https://github.com/ziedAkremi/nixos-config ~/.setup
   $ cd ~/.setup
   $ nix build --extra-experimental-features 'nix-command flakes' .#homeConfigurations.<host>.activationPackage
   $ ./result/activate
@@ -254,7 +254,7 @@ In terminal run command: ~$ sh <(curl -L https://nixos.org/nix/install)~
 
 #+begin_src
   $ nix-env -iA nixpkgs.git
-  $ git clone https://github.com/matthiasbenaets/nixos-config ~/.setup
+  $ git clone https://github.com/ziedAkremi/nixos-config ~/.setup
   $ cd ~/.setup
   $ nix build .#darwinConfigurations.<host>.system
   $ ./result/sw/bin/darwin-rebuild switch --flake .#<host>
