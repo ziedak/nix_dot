@@ -22,6 +22,8 @@ let
     else false;
 in
 {
+
+  imports = [ ../../programs/waybar.nix ];
   programs.dconf.enable = true;
 
   services = {
