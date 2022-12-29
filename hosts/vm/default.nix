@@ -32,7 +32,6 @@
     #   timeout = 1;                              # Grub auto select timeout
     # };
 
-    kernelPackages = pkgs.linuxPackages_latest;
 
     loader = {                               # EFI Boot
       efi = {

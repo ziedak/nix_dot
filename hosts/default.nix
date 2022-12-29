@@ -36,7 +36,7 @@ in
     };                                                      # Pass flake variable
     modules = [                                             # Modules that are used.
       nur.nixosModules.nur
-     su
+     
       ./desktop
       ./configuration.nix
 
