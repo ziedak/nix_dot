@@ -11,4 +11,5 @@ in
         
   };
   };
+    home.file.".config/qtile/settings.lua".source = ./init.lua;
 }
