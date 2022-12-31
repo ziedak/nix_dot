@@ -90,7 +90,7 @@
       nixosConfigurations = {
         # Now, defining a new system is can be done in one line
         #                                Architecture   Hostname
-        zedvm = mySystems inputs.nixpkgs ${system} "zdvm";
+        zedvm = mySystems inputs.nixpkgs system "zdvm";
 
       };
     };

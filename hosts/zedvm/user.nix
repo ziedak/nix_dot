@@ -7,6 +7,5 @@
         extraOutputsToInstall = ["doc" "devdoc"];
      };
    
-    
   
 }
