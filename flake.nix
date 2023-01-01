@@ -10,10 +10,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # rust-overlay = {
-    #   url = "github:oxalica/rust-overlay";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    rust-overlay = {
+      url = "github:oxalica/rust-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # nur = {
     #     url = "github:nix-community/NUR";                                   # NUR Packages
@@ -55,6 +55,8 @@
             }
             # General configuration (users, networking, sound, etc)
             ./core
+            # General Desktop configuration (awesome,qtile, etc)
+            ./desktop
             # Hardware config (bootloader, kernel modules, filesystems, etc)
             # DO NOT USE MY HARDWARE CONFIG!! USE YOUR OWN!!
             (./. + "/hosts/${hostname}/hardware-configuration.nix")
@@ -64,7 +66,7 @@
                 useUserPackages = true;
                 useGlobalPkgs = true;
                 extraSpecialArgs = {
-                  inherit inputs nixpkgs username monitors;
+                  inherit inputs nixpkgs username hostname monitors;
                   inherit self;
 
                 };
@@ -90,7 +92,7 @@
       nixosConfigurations = {
         # Now, defining a new system is can be done in one line
         #                                Architecture   Hostname
-        zedvm = mySystems inputs.nixpkgs system "zdvm";
+        zedvm = mySystems inputs.nixpkgs system "zedvm";
 
       };
     };

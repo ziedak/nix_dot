@@ -7,7 +7,7 @@
 
 {
     imports = [
-        ./displayManager
+        #./displayManager
         ./windowManager
     ];
 

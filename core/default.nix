@@ -8,7 +8,7 @@
     ./bootloader.nix 
     ./cron.nix
     ./environment.nix
-    ./font.nix
+    ./fonts.nix
     ./hardware.nix
     ./i18n.nix
     ./mime.nix

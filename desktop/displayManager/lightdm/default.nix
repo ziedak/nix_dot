@@ -10,7 +10,7 @@
     
   in
 {  
-     displayManager = {                          # Display Manager
+    services.xserver.displayManager = {                          # Display Manager
          sessionCommands = monitor;
         
         lightdm = {
