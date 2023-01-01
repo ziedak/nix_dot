@@ -5,10 +5,9 @@
 }:
  
 {
-    imports = [
-        ../../modules/desktop
-        ];
-
+    # imports = [
+    #     ../../modules/desktop
+    #     ];
     programs.dconf.enable = true;
 
   services.xserver = {
