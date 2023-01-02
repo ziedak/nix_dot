@@ -11,7 +11,7 @@
     };
   };
 
-  home-manager .users.${username} .home.file = {
+  home-manager .users.${username}.home.file = {
     ".config/qtile/config.py".source = ./config.py;
   };
 }
