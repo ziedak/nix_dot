@@ -1,7 +1,8 @@
 { username, lib, pkgs, host, ... }:
 
 {
-  xsession = {
+  services = {
+    xserver = {
     enable = true;
     #numlock.enable = true;
     windowManager = {
@@ -9,6 +10,7 @@
         enable = true;
         };
     };
+  };
   };
 
   home-manager .users.${username}.home.file = {
