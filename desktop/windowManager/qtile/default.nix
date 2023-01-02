@@ -7,7 +7,7 @@
     windowManager = {
       qtile = {
         enable = true;
-        }
+        };
     };
   };
 
