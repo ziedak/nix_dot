@@ -10,7 +10,4 @@
         #./displayManager
         ./windowManager
     ];
-
-
-   
 }

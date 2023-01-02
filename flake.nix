@@ -76,7 +76,7 @@
 
             }
           ];
-          specialArgs = { inherit inputs; };
+          specialArgs = { inherit inputs username; };
         };
 
     in {

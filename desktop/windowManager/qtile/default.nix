@@ -1,18 +1,17 @@
-{ config, lib, pkgs, host, ... }:
+{ username, lib, pkgs, host, ... }:
 
 {
- # xsession
-   services.xserver = {
+  xsession = {
     enable = true;
-    numlock.enable = true;
+    #numlock.enable = true;
     windowManager = {
       qtile = {
         enable = true;
-       
-        };
+        }
     };
   };
-    home.configFile= {
-      "qtile/config.py".source = ./config.py;
-    };
+
+  home-manager .users.${username} .home.file = {
+    ".config/qtile/config.py".source = ./config.py;
+  };
 }
